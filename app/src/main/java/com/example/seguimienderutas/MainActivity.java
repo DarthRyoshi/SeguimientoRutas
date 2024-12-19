@@ -60,16 +60,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Método simulado para autenticar usuarios localmente
+
     private boolean authenticateUser(String email, String password) {
-        // Aquí puedes implementar lógica para verificar las credenciales contra una base de datos local
-        return "usuario@ejemplo.com".equals(email) && "1234".equals(password); // Ejemplo
+
+        return "usuario@ejemplo.com".equals(email) && "1234".equals(password);
     }
 
     // Método para redirigir a la actividad del mapa
     private void goToMapActivity() {
-        Intent intent = new Intent(MainActivity.this, MapActivity.class); // Suponiendo que la actividad del mapa se llama MapActivity
+        Intent intent = new Intent(MainActivity.this, MapActivity.class);
         startActivity(intent);
-        finish(); // Cerrar la actividad de login para que no se pueda volver a ella
+        finish();
     }
 }
