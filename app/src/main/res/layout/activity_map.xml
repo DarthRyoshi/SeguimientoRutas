@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mapa -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botones en la parte inferior -->
+    <Button
+        android:id="@+id/btnIniciarRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Ruta"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnDetenerRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detener Ruta"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/btnIniciarRuta"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/btnDetenerRuta"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnVerHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Historial"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/btnCerrarSesion"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp" />
+</RelativeLayout>

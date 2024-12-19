@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ListView para mostrar el historial de rutas -->
+    <ListView
+        android:id="@+id/listViewHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- TextView para mostrar los detalles de la ruta seleccionada -->
+    <TextView
+        android:id="@+id/textViewDetallesRuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalles de la ruta"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:background="#f0f0f0"/>
+
+    <!-- Botón para volver a la actividad del mapa -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
